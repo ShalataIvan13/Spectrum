@@ -15,14 +15,30 @@
 <body>
     <div id="app">
         <header class="header">
+            
+            <div class="header__humburger">
+                <div class="header__humburger_btn"> 
+                    <img src="../icon/menuHumburger.png">
+                </div>
+            </div>
+
+                            
             <div class="header__logo">
                 <a href="#" class="header__title">
-                    <img src="../icon/logo2.png" class="header__logo_img">
+                    <!-- <img src="../icon/logo2.png" class="header__logo_img"> -->
                     Spectrum
                 </a>
             </div>
 
-            <div class="header__wrapper_menu">
+            <div class="header__border_line"></div>
+
+            <div class="header__phoneNumber">
+                0-888-777-666
+            </div>
+
+            <div class="header__border_line"></div>
+
+            <!-- <div class="header__wrapper_menu_item">
                 <p @click="showMainPage=true" class="header__menu_item">
                     Main
                 </p>
@@ -38,15 +54,30 @@
                 <p class="header__menu_item">
                     About us
                 </p>
-            </div>
-
-            <div class="header__search">
-                <input type="text" placeholder="Enter what you want to find">
-                <div class="header__button">
-                    <button class="header__button_search">Search</button>
+            </div> -->
+            
+                <div class="header__search">
+                    <input type="text" placeholder="What are you looking for?">
+                    <div class="header__button">
+                        <button class="header__button_search">Search</button>
+                    </div>
                 </div>
-                <button class="header__button_basked"></button>
-            </div>
+
+                <div class="header__border_line"></div>
+
+                <div class="header__button_basket">
+                    <img src="../icon/basket.png"></img>
+                    <div>Basket</div>
+                </div>
+
+                <div class="header__border_line"></div>
+
+                <div class="header__login">
+                    <img src="../icon/persone.png">
+                    <span class="header__login_descr">Sing in</span>
+                    <span class="header__login_descr">Sing up</span>
+                </div>
+
         </header>
 
         <app-main-page v-show="showMainPage"></app-main-page>

@@ -18,7 +18,7 @@
                     <div v-for="phone in api" class="main_page__item">
 
                         <div class="main_page__item_img">
-                            <img src="../img/smartphone img.jpg">
+                            <img src="../img/samsung.jpg">
                         </div>
 
                         <div class="main_page__item_title">
@@ -30,7 +30,7 @@
                         </div>
 
                         <div class="main_page__item_price">
-                            Price: {{ phone.price }} USD
+                            Price: {{ phone.price }}$
                         </div>
                         
                     </div>
@@ -66,9 +66,11 @@
                 }
             }
         },
+
         created() {
             this.postPhone()
         },
+
         watch: {
             model() {
                 this.postPhone()
